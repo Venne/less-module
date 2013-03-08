@@ -1,0 +1,12 @@
+services:
+
+	core.lessCommand:
+		class: LessModule\Commands\LessCommand
+		tags: [command]
+
+factories:
+
+	lessMacro:
+		factory: LessModule\Macros\LessMacro::install(%compiler%, @venne.moduleHelpers, %wwwCacheDir%, %wwwDir%, %debugMode%)
+		parameters: [compiler]
+		tags: [macro]

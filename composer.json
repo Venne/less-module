@@ -1,0 +1,33 @@
+{
+	"name": "venne/less-module",
+	"description": "less php compiler module",
+	"keywords": ["cms", "nette", "venne", "module", "less"],
+	"version": "2.0.0",
+	"authors": [
+		{
+			"name": "Pavlína Ostrá"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"venne/cms-module": "2.0.x-dev",
+		"leafo/lessphp": "0.3.8"
+	},
+	"autoload": {
+		"psr-0": {
+			"LessModule": ""
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "2.0.x-dev"
+		},
+		"venne": {
+			"configuration": {
+				"includes": [
+					"%modules.less.path%/Resources/config/config.neon"
+				]
+			}
+		}
+	}
+}

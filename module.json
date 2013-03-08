@@ -1,0 +1,14 @@
+{
+	"name": "venne/less-module",
+	"description": "less php compiler module",
+	"keywords": ["cms", "nette", "venne", "module", "less"],
+	"authors": [
+		{
+			"name": "Pavlína Ostrá"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"leafo/lessphp": "0.3.8"
+	}
+}
