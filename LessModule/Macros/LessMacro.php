@@ -61,6 +61,7 @@ class LessMacro extends \Nette\Latte\Macros\MacroSet
 		$path = $node->tokenizer->fetchWord();
 		$params = $writer->formatArray();
 		$path = $this->moduleHelpers->expandPath($path, 'Resources/public');
+		$path = \Nette\Utils\Strings::replace($path, '~\\\~', '/');
 
 		if (!$this->debugMode) {
 			$less = new \lessc();
