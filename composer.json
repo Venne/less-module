@@ -24,9 +24,9 @@
 		},
 		"venne": {
 			"configuration": {
-				"includes": [
-					"%modules.less.path%/Resources/config/config.neon"
-				]
+				"extensions": {
+					"less": "LessModule\\DI\\LessExtension"
+				}
 			}
 		}
 	}
