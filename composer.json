@@ -10,8 +10,8 @@
 	],
 	"require": {
 		"php": ">=5.3.2",
-		"venne/cms-module": "2.0.x-dev",
-		"leafo/lessphp": "0.3.8"
+		"venne/cms-module": ">=2.0.0-dev,<2.2.0-dev",
+		"leafo/lessphp": "0.3.9"
 	},
 	"autoload": {
 		"psr-0": {
